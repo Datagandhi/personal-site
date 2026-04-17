@@ -1,0 +1,148 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Your Name — Personal Site</title>
+    <meta
+      name="description"
+      content="Bio, endorsements, and portfolio of Your Name."
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header class="site-header">
+      <div class="container header-inner">
+        <a href="#top" class="brand">Your Name</a>
+        <nav class="nav" aria-label="Primary">
+          <a href="#about">About</a>
+          <a href="#endorsements">Endorsements</a>
+          <a href="#portfolio">Portfolio</a>
+        </nav>
+      </div>
+    </header>
+
+    <main id="top">
+      <section id="about" class="section">
+        <div class="container about-grid">
+          <div class="avatar" aria-hidden="true">YN</div>
+          <div>
+            <h1 class="display">Hi, I'm <span class="accent">Your Name</span>.</h1>
+            <p class="lede">
+              A short tagline goes here — what you do in one sentence, and the
+              kind of problems you love solving.
+            </p>
+            <p>
+              Replace this with 2–3 sentences of bio: your background, the
+              domains you've worked in (data, analytics engineering, BI), and
+              what you're focused on right now. Keep it conversational.
+            </p>
+            <p>
+              Optional second paragraph: what you're exploring, open to, or
+              curious about. A light personal note helps.
+            </p>
+            <ul class="link-row" aria-label="Contact links">
+              <li><a href="https://www.linkedin.com/in/your-handle" rel="noopener">LinkedIn</a></li>
+              <li><a href="https://github.com/datagandhi" rel="noopener">GitHub</a></li>
+              <li><a href="mailto:you@example.com">Email</a></li>
+            </ul>
+          </div>
+        </div>
+      </section>
+
+      <section id="endorsements" class="section section--muted">
+        <div class="container">
+          <h2>Endorsements</h2>
+          <p class="section-sub">A few kind words from people I've worked with.</p>
+          <div class="card-grid">
+            <figure class="quote-card">
+              <blockquote>
+                <p>
+                  "Placeholder endorsement #1 — paste a real LinkedIn quote
+                  here. Keep it 2–3 sentences so the card stays tidy."
+                </p>
+              </blockquote>
+              <figcaption>
+                <strong>Endorser One</strong>
+                <span>Title, Company</span>
+              </figcaption>
+            </figure>
+
+            <figure class="quote-card">
+              <blockquote>
+                <p>
+                  "Placeholder endorsement #2 — this is where a second quote
+                  lives. Punchy quotes read better than long ones."
+                </p>
+              </blockquote>
+              <figcaption>
+                <strong>Endorser Two</strong>
+                <span>Title, Company</span>
+              </figcaption>
+            </figure>
+
+            <figure class="quote-card">
+              <blockquote>
+                <p>
+                  "Placeholder endorsement #3 — round out the set with one
+                  more. Mix seniority and domains if you can."
+                </p>
+              </blockquote>
+              <figcaption>
+                <strong>Endorser Three</strong>
+                <span>Title, Company</span>
+              </figcaption>
+            </figure>
+          </div>
+        </div>
+      </section>
+
+      <section id="portfolio" class="section">
+        <div class="container">
+          <h2>Portfolio</h2>
+          <p class="section-sub">
+            Selected work. Dashboards and dbt estate write-ups coming in the next few weeks.
+          </p>
+          <div class="card-grid">
+            <article class="work-card">
+              <h3>Dashboards</h3>
+              <p>
+                BI dashboards and analytics artefacts I've shipped. Screenshots
+                and short case notes will live here.
+              </p>
+              <span class="pill">Coming soon</span>
+            </article>
+
+            <article class="work-card">
+              <h3>dbt Estate</h3>
+              <p>
+                An overview of dbt projects — modelling patterns, lineage,
+                testing strategy, and docs.
+              </p>
+              <span class="pill">Coming soon</span>
+            </article>
+
+            <article class="work-card">
+              <h3>Case Studies</h3>
+              <p>
+                Write-ups of specific problems: the brief, the approach, the
+                outcome, what I'd do differently.
+              </p>
+              <span class="pill">Coming soon</span>
+            </article>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container">
+        <small>&copy; <span id="year"></span> Your Name. Built with plain HTML &amp; CSS.</small>
+      </div>
+    </footer>
+
+    <script>
+      document.getElementById("year").textContent = new Date().getFullYear();
+    </script>
+  </body>
+</html>
