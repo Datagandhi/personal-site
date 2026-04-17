@@ -54,7 +54,13 @@
         <div class="container">
           <h2>Endorsements</h2>
           <p class="section-sub">A few kind words from people I've worked with.</p>
-          <div class="card-grid">
+        </div>
+        <div
+          class="marquee"
+          aria-label="Endorsements carousel"
+          role="region"
+        >
+          <div class="marquee-track">
             <figure class="quote-card">
               <blockquote>
                 <p>
@@ -90,6 +96,45 @@
               </blockquote>
               <figcaption>
                 <strong>Endorser Three</strong>
+                <span>Title, Company</span>
+              </figcaption>
+            </figure>
+
+            <figure class="quote-card">
+              <blockquote>
+                <p>
+                  "Placeholder endorsement #4 — a fourth voice keeps the
+                  scroll feeling rich without being repetitive."
+                </p>
+              </blockquote>
+              <figcaption>
+                <strong>Endorser Four</strong>
+                <span>Title, Company</span>
+              </figcaption>
+            </figure>
+
+            <figure class="quote-card">
+              <blockquote>
+                <p>
+                  "Placeholder endorsement #5 — vary perspectives: peer,
+                  manager, client, collaborator."
+                </p>
+              </blockquote>
+              <figcaption>
+                <strong>Endorser Five</strong>
+                <span>Title, Company</span>
+              </figcaption>
+            </figure>
+
+            <figure class="quote-card">
+              <blockquote>
+                <p>
+                  "Placeholder endorsement #6 — last one in the loop before
+                  it cycles back to the first."
+                </p>
+              </blockquote>
+              <figcaption>
+                <strong>Endorser Six</strong>
                 <span>Title, Company</span>
               </figcaption>
             </figure>
@@ -143,6 +188,16 @@
 
     <script>
       document.getElementById("year").textContent = new Date().getFullYear();
+
+      // Duplicate marquee cards once so the CSS translateX(-50%) loop is seamless.
+      (function () {
+        var track = document.querySelector(".marquee-track");
+        if (!track) return;
+        var clone = track.cloneNode(true);
+        clone.setAttribute("aria-hidden", "true");
+        track.parentNode.appendChild(clone);
+        track.parentNode.classList.add("marquee--ready");
+      })();
     </script>
   </body>
 </html>

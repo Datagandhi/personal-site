@@ -194,6 +194,70 @@ h3 {
   margin: 0;
 }
 
+/* Marquee (auto-scrolling endorsements) */
+.marquee {
+  position: relative;
+  overflow: hidden;
+  padding: 1rem 0;
+  /* Fade in/out at the edges for a polished look */
+  -webkit-mask-image: linear-gradient(
+    to right,
+    transparent,
+    #000 8%,
+    #000 92%,
+    transparent
+  );
+  mask-image: linear-gradient(
+    to right,
+    transparent,
+    #000 8%,
+    #000 92%,
+    transparent
+  );
+}
+
+.marquee-track {
+  display: flex;
+  gap: 1.25rem;
+  width: max-content;
+  /* Only animate once the JS clone has run, to avoid flashing a single set */
+}
+
+.marquee.marquee--ready .marquee-track {
+  animation: marquee-scroll 45s linear infinite;
+}
+
+.marquee-track .quote-card {
+  flex: 0 0 320px;
+  max-width: 320px;
+  min-height: 100%;
+}
+
+.marquee:hover .marquee-track,
+.marquee:focus-within .marquee-track {
+  animation-play-state: paused;
+}
+
+@keyframes marquee-scroll {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(-50%);
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .marquee {
+    overflow-x: auto;
+    -webkit-mask-image: none;
+    mask-image: none;
+  }
+  .marquee.marquee--ready .marquee-track {
+    animation: none;
+  }
+}
+
 .quote-card blockquote {
   margin: 0 0 1rem;
   color: var(--text);
