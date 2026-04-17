@@ -288,6 +288,53 @@ h3 {
   margin: 0 0 1rem;
 }
 
+/* Clickable work-card variant (used on the homepage portfolio grid) */
+.work-card--link {
+  display: block;
+  text-decoration: none;
+  color: inherit;
+  transition: transform 0.15s ease, box-shadow 0.15s ease, border-color 0.15s ease;
+}
+
+.work-card--link:hover,
+.work-card--link:focus-visible {
+  transform: translateY(-2px);
+  border-color: var(--accent);
+  box-shadow: 0 2px 4px rgba(20, 20, 20, 0.06), 0 10px 24px rgba(20, 20, 20, 0.08);
+  outline: none;
+}
+
+.work-card--link h3 {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 0.5rem;
+}
+
+.work-card--link .arrow {
+  color: var(--accent);
+  font-weight: 500;
+  transition: transform 0.15s ease;
+}
+
+.work-card--link:hover .arrow,
+.work-card--link:focus-visible .arrow {
+  transform: translateX(3px);
+}
+
+/* Back link used on sub-pages */
+.back-link {
+  display: inline-block;
+  margin-bottom: 1.5rem;
+  color: var(--text-soft);
+  text-decoration: none;
+  font-size: 0.95rem;
+}
+
+.back-link:hover {
+  color: var(--accent);
+}
+
 .pill {
   display: inline-block;
   font-size: 0.75rem;

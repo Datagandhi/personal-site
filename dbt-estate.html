@@ -1,0 +1,75 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>dbt Estate — Naveen Raj Mohan</title>
+    <meta
+      name="description"
+      content="A tour of the dbt projects and modelling patterns by Naveen Raj Mohan."
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header class="site-header">
+      <div class="container header-inner">
+        <a href="index.html#top" class="brand">Naveen Raj Mohan</a>
+        <nav class="nav" aria-label="Primary">
+          <a href="index.html#about">About</a>
+          <a href="index.html#endorsements">Endorsements</a>
+          <a href="index.html#portfolio">Portfolio</a>
+        </nav>
+      </div>
+    </header>
+
+    <main>
+      <section class="section">
+        <div class="container">
+          <a class="back-link" href="index.html#portfolio">&larr; Back to portfolio</a>
+          <h1 class="display">dbt Estate</h1>
+          <p class="lede">
+            A tour of the dbt projects I work with — modelling patterns,
+            lineage, testing strategy, and documentation practices.
+          </p>
+          <p>
+            This page will host lineage diagrams, sample model code, and
+            notes on how I structure staging, intermediate, and mart layers.
+          </p>
+
+          <div class="card-grid" style="margin-top: 2.5rem">
+            <article class="work-card">
+              <h3>Modelling</h3>
+              <p>Staging, intermediate, and mart conventions; naming and folder structure.</p>
+              <span class="pill">Coming soon</span>
+            </article>
+            <article class="work-card">
+              <h3>Testing</h3>
+              <p>Schema tests, singular tests, freshness, and CI wiring.</p>
+              <span class="pill">Coming soon</span>
+            </article>
+            <article class="work-card">
+              <h3>Documentation</h3>
+              <p>dbt docs, descriptions, and how I surface them to stakeholders.</p>
+              <span class="pill">Coming soon</span>
+            </article>
+            <article class="work-card">
+              <h3>Lineage</h3>
+              <p>Sample lineage graphs showing source-to-mart flow.</p>
+              <span class="pill">Coming soon</span>
+            </article>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container">
+        <small>&copy; <span id="year"></span> Naveen Raj Mohan. Built with plain HTML &amp; CSS.</small>
+      </div>
+    </footer>
+
+    <script>
+      document.getElementById("year").textContent = new Date().getFullYear();
+    </script>
+  </body>
+</html>
