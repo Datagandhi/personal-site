@@ -348,6 +348,165 @@ h3 {
   border: 1px solid var(--border);
 }
 
+/* Resume */
+.resume-head {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 2rem;
+  flex-wrap: wrap;
+}
+
+.muted {
+  color: var(--text-soft);
+}
+
+.btn-ghost {
+  display: inline-block;
+  padding: 0.55rem 1rem;
+  border: 1px solid var(--border);
+  border-radius: 999px;
+  color: var(--text);
+  text-decoration: none;
+  font-size: 0.9rem;
+  background: var(--card);
+  transition: border-color 0.15s ease, color 0.15s ease;
+}
+
+.btn-ghost:hover {
+  border-color: var(--accent);
+  color: var(--accent);
+}
+
+.role {
+  padding: 1.25rem 0;
+  border-top: 1px solid var(--border);
+}
+
+.role:first-of-type {
+  border-top: 0;
+  padding-top: 0;
+}
+
+.role-head {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  gap: 1rem;
+  flex-wrap: wrap;
+}
+
+.role-head h3 {
+  margin: 0;
+}
+
+.role-org {
+  color: var(--text-soft);
+  margin: 0.1rem 0 0;
+  font-size: 0.95rem;
+}
+
+.role-dates {
+  color: var(--text-soft);
+  font-size: 0.9rem;
+  white-space: nowrap;
+  font-variant-numeric: tabular-nums;
+}
+
+.role-points {
+  margin: 0.75rem 0 0;
+  padding-left: 1.1rem;
+}
+
+.role-points li {
+  margin-bottom: 0.4rem;
+  color: var(--text);
+}
+
+.role-points li::marker {
+  color: var(--accent);
+}
+
+.skills-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  gap: 1.25rem;
+}
+
+.skill-group {
+  background: var(--card);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  padding: 1.25rem;
+  box-shadow: var(--shadow);
+}
+
+.skill-group h3 {
+  font-size: 1rem;
+  margin-bottom: 0.35rem;
+}
+
+.skill-group p {
+  margin: 0;
+  color: var(--text-soft);
+  font-size: 0.95rem;
+}
+
+.two-col {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 2.5rem;
+}
+
+.plain-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.plain-list li {
+  padding: 0.5rem 0;
+  border-bottom: 1px solid var(--border);
+  color: var(--text);
+}
+
+.plain-list li:last-child {
+  border-bottom: 0;
+}
+
+@media (max-width: 640px) {
+  .two-col {
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+  }
+}
+
+@media print {
+  .site-header,
+  .site-footer,
+  .back-link,
+  .no-print {
+    display: none !important;
+  }
+  .section {
+    padding: 1rem 0;
+    break-inside: avoid;
+  }
+  .section--muted {
+    background: transparent;
+    border: 0;
+  }
+  body {
+    font-size: 12pt;
+    color: #000;
+    background: #fff;
+  }
+  a {
+    color: #000;
+    text-decoration: none;
+  }
+}
+
 /* Footer */
 .site-footer {
   border-top: 1px solid var(--border);
