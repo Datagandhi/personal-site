@@ -1,0 +1,266 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Resume — Naveen Raj Mohan</title>
+    <meta
+      name="description"
+      content="Resume of Naveen Raj Mohan — analytics engineer and BI practitioner."
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header class="site-header">
+      <div class="container header-inner">
+        <a href="index.html#top" class="brand">Naveen Raj Mohan</a>
+        <nav class="nav" aria-label="Primary">
+          <a href="index.html#about">About</a>
+          <a href="index.html#endorsements">Endorsements</a>
+          <a href="portfolio.html">Portfolio</a>
+          <a href="resume.html">Resume</a>
+        </nav>
+      </div>
+    </header>
+
+    <main>
+      <section class="section">
+        <div class="container">
+          <a class="back-link" href="index.html#top">&larr; Back to home</a>
+
+          <div class="resume-head">
+            <div>
+              <h1 class="display">Naveen Raj Mohan</h1>
+              <p class="lede">
+                Analytics engineer and BI practitioner — I turn messy
+                operational data into well-modelled, well-tested, trustworthy
+                products that teams make decisions with.
+              </p>
+              <ul class="link-row" aria-label="Contact">
+                <li><a href="mailto:you@example.com">you@example.com</a></li>
+                <li><a href="https://www.linkedin.com/in/your-handle" rel="noopener">LinkedIn</a></li>
+                <li><a href="https://github.com/datagandhi" rel="noopener">GitHub</a></li>
+                <li><span class="muted">London, UK</span></li>
+              </ul>
+            </div>
+            <a class="btn-ghost no-print" href="#" onclick="window.print();return false;">Print / Save PDF</a>
+          </div>
+        </div>
+      </section>
+
+      <section class="section section--muted">
+        <div class="container">
+          <h2>Summary</h2>
+          <p>
+            Analytics engineer with a decade of experience across product
+            analytics, finance, and growth. I specialise in dbt-led data
+            platforms on Snowflake and BigQuery, pairing well-tested
+            transformations with BI layers that stakeholders actually use.
+            Comfortable owning an estate end-to-end — from ingestion and
+            modelling to dashboards, documentation, and stakeholder
+            enablement.
+          </p>
+        </div>
+      </section>
+
+      <section class="section">
+        <div class="container">
+          <h2>Experience</h2>
+
+          <article class="role">
+            <header class="role-head">
+              <div>
+                <h3>Senior Analytics Engineer</h3>
+                <p class="role-org">Company Name · London</p>
+              </div>
+              <span class="role-dates">Mar 2023 — Present</span>
+            </header>
+            <ul class="role-points">
+              <li>
+                Rebuilt the core dbt project (120+ models) around a staging /
+                intermediate / mart pattern; cut mart build time from 38 to
+                11 minutes and halved nightly Snowflake spend.
+              </li>
+              <li>
+                Owned the BI layer in Looker — defined a single source of
+                truth for revenue, retention, and funnel metrics used by
+                Product, Finance, and the board.
+              </li>
+              <li>
+                Introduced dbt tests, freshness checks, and Slack alerts;
+                reduced silent data incidents from ~2/month to &lt;1/quarter.
+              </li>
+              <li>
+                Coached two mid-level analysts into analytics-engineering
+                roles; ran an internal dbt clinic for the broader data team.
+              </li>
+            </ul>
+          </article>
+
+          <article class="role">
+            <header class="role-head">
+              <div>
+                <h3>Analytics Engineer</h3>
+                <p class="role-org">Company Name · London</p>
+              </div>
+              <span class="role-dates">Jun 2020 — Feb 2023</span>
+            </header>
+            <ul class="role-points">
+              <li>
+                Designed and shipped the first dbt project at the company,
+                migrating ~60 bespoke SQL scripts into a documented, tested,
+                version-controlled estate.
+              </li>
+              <li>
+                Partnered with Product on activation and onboarding
+                experiments — dashboards and causal read-outs that fed
+                directly into the quarterly roadmap.
+              </li>
+              <li>
+                Built the finance data mart for ARR, MRR movements, and
+                cohort LTV; picked up and reconciled with the CFO team each
+                month-end close.
+              </li>
+            </ul>
+          </article>
+
+          <article class="role">
+            <header class="role-head">
+              <div>
+                <h3>BI Developer</h3>
+                <p class="role-org">Company Name · Remote</p>
+              </div>
+              <span class="role-dates">Sep 2017 — May 2020</span>
+            </header>
+            <ul class="role-points">
+              <li>
+                Delivered 30+ production Tableau dashboards across
+                operations, marketing, and CS; standardised a component
+                library so new dashboards shipped in days rather than weeks.
+              </li>
+              <li>
+                Authored the SQL style guide and review process that is
+                still in use by the data team.
+              </li>
+            </ul>
+          </article>
+
+          <article class="role">
+            <header class="role-head">
+              <div>
+                <h3>Data Analyst</h3>
+                <p class="role-org">Company Name · Chennai</p>
+              </div>
+              <span class="role-dates">Jul 2015 — Aug 2017</span>
+            </header>
+            <ul class="role-points">
+              <li>
+                First data hire. Built reporting in SQL and Excel, then
+                grew the stack into a Redshift warehouse with Airflow
+                orchestration.
+              </li>
+              <li>
+                Shipped the company's first self-serve KPI dashboard; it
+                replaced weekly Monday-morning decks.
+              </li>
+            </ul>
+          </article>
+        </div>
+      </section>
+
+      <section class="section section--muted">
+        <div class="container">
+          <h2>Skills</h2>
+          <div class="skills-grid">
+            <div class="skill-group">
+              <h3>Modelling &amp; Transformation</h3>
+              <p>dbt (Core &amp; Cloud), SQL, Jinja, dbt tests, dbt-utils, dbt-expectations, SQLFluff.</p>
+            </div>
+            <div class="skill-group">
+              <h3>Warehouses</h3>
+              <p>Snowflake, BigQuery, Redshift, Postgres. Performance tuning, cost observability, RBAC.</p>
+            </div>
+            <div class="skill-group">
+              <h3>BI &amp; Visualisation</h3>
+              <p>Looker (LookML), Tableau, Metabase, Mode, Hex. Semantic modelling and dashboard design.</p>
+            </div>
+            <div class="skill-group">
+              <h3>Orchestration &amp; Ingestion</h3>
+              <p>Airflow, Dagster, Fivetran, Airbyte, Segment, custom Python/Node ingestions.</p>
+            </div>
+            <div class="skill-group">
+              <h3>Engineering</h3>
+              <p>Git / GitHub Actions, Python, Docker, Terraform, basic dbt-server and CI/CD patterns.</p>
+            </div>
+            <div class="skill-group">
+              <h3>Ways of Working</h3>
+              <p>Stakeholder discovery, requirements shaping, async docs, coaching and code review.</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section">
+        <div class="container">
+          <div class="two-col">
+            <div>
+              <h2>Education</h2>
+              <article class="role">
+                <header class="role-head">
+                  <div>
+                    <h3>BEng, Computer Science</h3>
+                    <p class="role-org">University Name</p>
+                  </div>
+                  <span class="role-dates">2011 — 2015</span>
+                </header>
+                <ul class="role-points">
+                  <li>First-class honours. Dissertation on time-series anomaly detection.</li>
+                </ul>
+              </article>
+            </div>
+
+            <div>
+              <h2>Certifications</h2>
+              <ul class="plain-list">
+                <li>dbt Analytics Engineering — dbt Labs</li>
+                <li>SnowPro Core — Snowflake</li>
+                <li>Google Cloud Professional Data Engineer</li>
+                <li>LookML Developer — Looker</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section section--muted">
+        <div class="container">
+          <h2>Selected Talks &amp; Writing</h2>
+          <ul class="plain-list">
+            <li>
+              <strong>"Testing the boring bits of your dbt estate"</strong> —
+              Coalesce London meet-up, 2024.
+            </li>
+            <li>
+              <strong>"A pragmatic semantic layer"</strong> — internal
+              engineering guild talk, 2023.
+            </li>
+            <li>
+              <strong>Blog:</strong> assorted write-ups on modelling patterns
+              and BI craft (linked from the portfolio page).
+            </li>
+          </ul>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container">
+        <small>&copy; <span id="year"></span> Naveen Raj Mohan. Built with plain HTML &amp; CSS.</small>
+      </div>
+    </footer>
+
+    <script>
+      document.getElementById("year").textContent = new Date().getFullYear();
+    </script>
+  </body>
+</html>

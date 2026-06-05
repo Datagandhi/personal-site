@@ -1,0 +1,219 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Portfolio — Naveen Raj Mohan</title>
+    <meta
+      name="description"
+      content="Power BI reports and selected analytics work by Naveen Raj Mohan."
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header class="site-header">
+      <div class="container header-inner">
+        <a href="index.html#top" class="brand">Naveen Raj Mohan</a>
+        <nav class="nav" aria-label="Primary">
+          <a href="index.html#about">About</a>
+          <a href="index.html#endorsements">Endorsements</a>
+          <a href="portfolio.html">Portfolio</a>
+          <a href="resume.html">Resume</a>
+        </nav>
+      </div>
+    </header>
+
+    <main>
+      <section class="section">
+        <div class="container">
+          <a class="back-link" href="index.html#top">&larr; Back to home</a>
+          <h1 class="display">Portfolio</h1>
+          <p class="lede">
+            A selection of Power BI reports I've shipped. Click any card to
+            open the live report in an overlay — it stays on this page so you
+            can hop between reports quickly.
+          </p>
+        </div>
+      </section>
+
+      <section class="section section--muted">
+        <div class="container">
+          <h2>Power BI Reports</h2>
+          <p class="section-sub">
+            Live embeds. Some may prompt you to sign in if they're tenant-restricted.
+          </p>
+
+          <!-- TODO: replace data-embed-url values with the real Power BI embed URLs
+               (use the "Publish to web" or "Embed in SharePoint Online" link). -->
+          <div class="pbi-grid">
+            <button
+              class="pbi-card"
+              type="button"
+              data-embed-url="REPLACE_WITH_POWERBI_EMBED_URL"
+              data-title="Report One"
+              aria-label="Open Report One in an overlay"
+            >
+              <span class="thumb" aria-hidden="true"></span>
+              <span class="pbi-body">
+                <span class="pbi-title">Report One <span class="arrow" aria-hidden="true">&rarr;</span></span>
+                <span class="pbi-desc">Short description of the audience and the question this report answers.</span>
+                <span class="pill pill--accent">Power BI</span>
+              </span>
+            </button>
+
+            <button
+              class="pbi-card"
+              type="button"
+              data-embed-url="REPLACE_WITH_POWERBI_EMBED_URL"
+              data-title="Report Two"
+              aria-label="Open Report Two in an overlay"
+            >
+              <span class="thumb" aria-hidden="true"></span>
+              <span class="pbi-body">
+                <span class="pbi-title">Report Two <span class="arrow" aria-hidden="true">&rarr;</span></span>
+                <span class="pbi-desc">Short description of the audience and the question this report answers.</span>
+                <span class="pill pill--accent">Power BI</span>
+              </span>
+            </button>
+
+            <button
+              class="pbi-card"
+              type="button"
+              data-embed-url="REPLACE_WITH_POWERBI_EMBED_URL"
+              data-title="Report Three"
+              aria-label="Open Report Three in an overlay"
+            >
+              <span class="thumb" aria-hidden="true"></span>
+              <span class="pbi-body">
+                <span class="pbi-title">Report Three <span class="arrow" aria-hidden="true">&rarr;</span></span>
+                <span class="pbi-desc">Short description of the audience and the question this report answers.</span>
+                <span class="pill pill--accent">Power BI</span>
+              </span>
+            </button>
+
+            <button
+              class="pbi-card"
+              type="button"
+              data-embed-url="REPLACE_WITH_POWERBI_EMBED_URL"
+              data-title="Report Four"
+              aria-label="Open Report Four in an overlay"
+            >
+              <span class="thumb" aria-hidden="true"></span>
+              <span class="pbi-body">
+                <span class="pbi-title">Report Four <span class="arrow" aria-hidden="true">&rarr;</span></span>
+                <span class="pbi-desc">Short description of the audience and the question this report answers.</span>
+                <span class="pill pill--accent">Power BI</span>
+              </span>
+            </button>
+          </div>
+        </div>
+      </section>
+
+      <section class="section">
+        <div class="container">
+          <h2>More work</h2>
+          <p class="section-sub">Longer-form write-ups and the dbt side of the estate.</p>
+          <div class="card-grid">
+            <a class="work-card work-card--link" href="dbt-estate.html">
+              <h3>dbt Estate <span class="arrow" aria-hidden="true">&rarr;</span></h3>
+              <p>An overview of dbt projects — modelling patterns, lineage, testing strategy, and docs.</p>
+              <span class="pill">Coming soon</span>
+            </a>
+
+            <a class="work-card work-card--link" href="case-studies.html">
+              <h3>Case Studies <span class="arrow" aria-hidden="true">&rarr;</span></h3>
+              <p>Write-ups of specific problems: the brief, the approach, the outcome, what I'd do differently.</p>
+              <span class="pill">Coming soon</span>
+            </a>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <div
+      class="pbi-modal"
+      id="pbi-modal"
+      role="dialog"
+      aria-modal="true"
+      aria-labelledby="pbi-modal-title"
+      aria-hidden="true"
+    >
+      <div class="modal-backdrop" data-close="true"></div>
+      <div class="modal-dialog" role="document">
+        <header class="modal-head">
+          <h2 id="pbi-modal-title">Report</h2>
+          <button
+            type="button"
+            class="modal-close"
+            aria-label="Close report"
+            data-close="true"
+          >
+            &times;
+          </button>
+        </header>
+        <iframe
+          id="pbi-modal-frame"
+          title="Power BI report"
+          allowfullscreen
+          referrerpolicy="strict-origin-when-cross-origin"
+        ></iframe>
+      </div>
+    </div>
+
+    <footer class="site-footer">
+      <div class="container">
+        <small>&copy; <span id="year"></span> Naveen Raj Mohan. Built with plain HTML &amp; CSS.</small>
+      </div>
+    </footer>
+
+    <script>
+      document.getElementById("year").textContent = new Date().getFullYear();
+
+      (function () {
+        var modal = document.getElementById("pbi-modal");
+        var frame = document.getElementById("pbi-modal-frame");
+        var titleEl = document.getElementById("pbi-modal-title");
+        var lastTrigger = null;
+
+        function open(card) {
+          var url = card.getAttribute("data-embed-url");
+          var title = card.getAttribute("data-title") || "Report";
+          lastTrigger = card;
+          titleEl.textContent = title;
+          frame.setAttribute("title", title);
+          frame.src = url;
+          modal.classList.add("open");
+          modal.setAttribute("aria-hidden", "false");
+          document.body.classList.add("no-scroll");
+          var closeBtn = modal.querySelector(".modal-close");
+          if (closeBtn) closeBtn.focus();
+        }
+
+        function close() {
+          modal.classList.remove("open");
+          modal.setAttribute("aria-hidden", "true");
+          frame.src = "";
+          document.body.classList.remove("no-scroll");
+          if (lastTrigger) {
+            lastTrigger.focus();
+            lastTrigger = null;
+          }
+        }
+
+        document.querySelectorAll(".pbi-card").forEach(function (card) {
+          card.addEventListener("click", function () { open(card); });
+        });
+
+        modal.addEventListener("click", function (e) {
+          if (e.target.getAttribute && e.target.getAttribute("data-close") === "true") {
+            close();
+          }
+        });
+
+        document.addEventListener("keydown", function (e) {
+          if (e.key === "Escape" && modal.classList.contains("open")) close();
+        });
+      })();
+    </script>
+  </body>
+</html>
