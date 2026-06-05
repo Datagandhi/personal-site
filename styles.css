@@ -392,17 +392,13 @@ h3 {
   border-bottom: 1px solid var(--border);
 }
 
-.pbi-card .thumb-frame {
+.pbi-card .thumb-image {
   position: absolute;
-  top: 0;
-  left: 0;
+  inset: 0;
   width: 100%;
-  /* Power BI's iframe footer (zoom + branding bar) is ~80px tall;
-     extend the iframe past the clip so only the report shows. */
-  height: calc(100% + 80px);
-  border: 0;
-  pointer-events: none;
-  background: var(--bg-muted);
+  height: 100%;
+  object-fit: cover;
+  display: block;
 }
 
 .pbi-body {
