@@ -23,83 +23,134 @@
     <main>
       <section class="section">
         <div class="container">
-          <h1 class="display">Portfolio</h1>
           <p class="lede">
-            A selection of Power BI reports I've shipped. Click any card to
-            open the live report in an overlay — it stays on this page so you
-            can hop between reports quickly.
+            A selection of reports and dashboards built for traditional BI and creative data visualization use cases.
           </p>
         </div>
       </section>
 
       <section class="section section--muted">
         <div class="container">
-          <h2>Power BI Reports</h2>
+          <h2>Dashboards</h2>
           <p class="section-sub">
-            Live, public embeds — no sign-in needed.
           </p>
 
           <!-- Embed URLs are Power BI "Publish to web" share links. -->
           <div class="pbi-grid">
-            <button
+            <div
               class="pbi-card"
-              type="button"
-              data-embed-url="https://app.powerbi.com/view?r=eyJrIjoiM2FjYTYwYzctOWRhYS00NjM1LTkwYjktOTkwMmJhNWNlMTllIiwidCI6ImRmODY3OWNkLWE4MGUtNDVkOC05OWFjLWM4M2VkN2ZmOTVhMCJ9"
-              data-title="Sales Analysis Navigator"
-              aria-label="Open Sales Analysis Navigator in an overlay"
-            >
-              <span class="thumb" aria-hidden="true"></span>
-              <span class="pbi-body">
-                <span class="pbi-title">Sales Analysis Navigator <span class="arrow" aria-hidden="true">&rarr;</span></span>
-                <span class="pbi-desc">Interactive sales explorer with drill-through navigation across regions, products, and reps.</span>
-                <span class="pill pill--accent">Power BI</span>
-              </span>
-            </button>
-
-            <button
-              class="pbi-card"
-              type="button"
-              data-embed-url="https://app.powerbi.com/view?r=eyJrIjoiYzM2ZGNiNmEtMWEzZS00Yzc1LTgyY2YtZGZjMDUzODRlNjBmIiwidCI6ImRmODY3OWNkLWE4MGUtNDVkOC05OWFjLWM4M2VkN2ZmOTVhMCJ9"
-              data-title="KPI — Custom Visual"
-              aria-label="Open KPI Custom Visual report in an overlay"
-            >
-              <span class="thumb" aria-hidden="true"></span>
-              <span class="pbi-body">
-                <span class="pbi-title">KPI — Custom Visual <span class="arrow" aria-hidden="true">&rarr;</span></span>
-                <span class="pbi-desc">Hierarchical bullet-gantt KPI tracker built as a custom visual for plan-vs-actual reporting.</span>
-                <span class="pill pill--accent">Power BI</span>
-              </span>
-            </button>
-
-            <button
-              class="pbi-card"
-              type="button"
+              role="button"
+              tabindex="0"
               data-embed-url="https://app.powerbi.com/view?r=eyJrIjoiNjg1NmI2NjItMDFmMS00NmQ0LTg4NWUtOWU5MmU0NmQxMzMwIiwidCI6ImRmODY3OWNkLWE4MGUtNDVkOC05OWFjLWM4M2VkN2ZmOTVhMCJ9"
-              data-title="Sales Executive — Custom SVG Visuals"
-              aria-label="Open Sales Executive Custom SVG Visuals in an overlay"
+              data-title="Executive Sales Summary"
+              aria-label="Open Executive Sales Summary report in an overlay"
             >
-              <span class="thumb" aria-hidden="true"></span>
+              <span class="thumb">
+                <img
+                  class="thumb-image"
+                  src="assets/sales-executive.png"
+                  alt="Preview of Executive Sales Summary report"
+                  loading="lazy"
+                />
+              </span>
               <span class="pbi-body">
-                <span class="pbi-title">Sales Executive — Custom SVG Visuals <span class="arrow" aria-hidden="true">&rarr;</span></span>
-                <span class="pbi-desc">Executive-grade sales summary using bespoke SVG visuals for a tighter, branded feel.</span>
+                <span class="pbi-title">Executive Sales Summary<span class="arrow" aria-hidden="true">&rarr;</span></span>
+                <span class="pbi-desc">Executive sales summary using bespoke SVG visuals</span>
                 <span class="pill pill--accent">Power BI</span>
               </span>
-            </button>
+            </div>
 
-            <button
+            <div
               class="pbi-card"
-              type="button"
-              data-embed-url="https://app.powerbi.com/view?r=eyJrIjoiMmZlNGJlMDgtYjU0NS00Mjc1LTk4YzQtOWFhNWNkNTJiM2MzIiwidCI6ImRmODY3OWNkLWE4MGUtNDVkOC05OWFjLWM4M2VkN2ZmOTVhMCJ9"
-              data-title="Revenue Report"
-              aria-label="Open Revenue Report in an overlay"
+              role="button"
+              tabindex="0"
+              data-embed-url="https://app.powerbi.com/view?r=eyJrIjoiM2FjYTYwYzctOWRhYS00NjM1LTkwYjktOTkwMmJhNWNlMTllIiwidCI6ImRmODY3OWNkLWE4MGUtNDVkOC05OWFjLWM4M2VkN2ZmOTVhMCJ9"
+              data-title="Sales & Margin Performance"
+              aria-label="Open Sales & Margin Performance in an overlay"
             >
-              <span class="thumb" aria-hidden="true"></span>
+              <span class="thumb">
+                <img
+                  class="thumb-image"
+                  src="assets/sales-&-margin-performance.png"
+                  alt="Preview of Sales & Margin Performance report"
+                  loading="lazy"
+                />
+              </span>
               <span class="pbi-body">
-                <span class="pbi-title">Revenue Report <span class="arrow" aria-hidden="true">&rarr;</span></span>
-                <span class="pbi-desc">End-to-end revenue view — trends, mix, and movements at a glance.</span>
+                <span class="pbi-title">Sales & Margin Performance <span class="arrow" aria-hidden="true">&rarr;</span></span>
+                <span class="pbi-desc">Interactive and highly dynamic sales explorer focused on helping users self-serve and analyze on a wide range of questions.</span>
                 <span class="pill pill--accent">Power BI</span>
               </span>
-            </button>
+            </div>
+
+            <div
+              class="pbi-card"
+              role="button"
+              tabindex="0"
+              data-embed-url="https://app.powerbi.com/view?r=eyJrIjoiYzM2ZGNiNmEtMWEzZS00Yzc1LTgyY2YtZGZjMDUzODRlNjBmIiwidCI6ImRmODY3OWNkLWE4MGUtNDVkOC05OWFjLWM4M2VkN2ZmOTVhMCJ9"
+              data-title="KPI Tracker"
+              aria-label="Open KPI Tracker report in an overlay"
+            >
+              <span class="thumb">
+                <img
+                  class="thumb-image"
+                  src="assets/kpi-tracker.png"
+                  alt="Preview of KPI Tracker report"
+                  loading="lazy"
+                />
+              </span>
+              <span class="pbi-body">
+                <span class="pbi-title">KPI Tracker<span class="arrow" aria-hidden="true">&rarr;</span></span>
+                <span class="pbi-desc">KPI Tracker built as a custom SVG visual to provide insights beyond traditional KPI reporting</span>
+                <span class="pill pill--accent">Power BI</span>
+              </span>
+            </div>
+
+            <div
+              class="pbi-card"
+              role="button"
+              tabindex="0"
+              data-embed-url="https://app.powerbi.com/view?r=eyJrIjoiMmE3ZGRhMGQtN2Y1Ni00MTcxLWE3NmEtM2U1MjQzYzFjYzgxIiwidCI6ImRmODY3OWNkLWE4MGUtNDVkOC05OWFjLWM4M2VkN2ZmOTVhMCJ9"
+              data-title="Sales Comparison"
+              aria-label="Open Sales Comparison in an overlay"
+            >
+              <span class="thumb">
+                <img
+                  class="thumb-image"
+                  src="assets/sales-comparison.png"
+                  alt="Preview of Sales Comparison report"
+                  loading="lazy"
+                />
+              </span>
+              <span class="pbi-body">
+                <span class="pbi-title">Sales Comparison <span class="arrow" aria-hidden="true">&rarr;</span></span>
+                <span class="pbi-desc">Sales comparison across different period using a more creative visual approach.</span>
+                <span class="pill pill--accent">Power BI</span>
+              </span>
+            </div>
+
+            <div
+              class="pbi-card"
+              role="button"
+              tabindex="0"
+              data-embed-url="https://app.powerbi.com/view?r=eyJrIjoiMmZlNGJlMDgtYjU0NS00Mjc1LTk4YzQtOWFhNWNkNTJiM2MzIiwidCI6ImRmODY3OWNkLWE4MGUtNDVkOC05OWFjLWM4M2VkN2ZmOTVhMCJ9"
+              data-title="Sales Agent Performance Report"
+              aria-label="Open Sales Agent Performance Report in an overlay"
+            >
+              <span class="thumb">
+                <img
+                  class="thumb-image"
+                  src="assets/sales-agent-performance.png"
+                  alt="Preview of Sales Agent Performance Report"
+                  loading="lazy"
+                />
+              </span>
+              <span class="pbi-body">
+                <span class="pbi-title">Sales Agent Performance Report<span class="arrow" aria-hidden="true">&rarr;</span></span>
+                <span class="pbi-desc">End-to-end sales agent performance view</span>
+                <span class="pill pill--accent">Power BI</span>
+              </span>
+            </div>
           </div>
         </div>
       </section>
@@ -197,6 +248,12 @@
 
         document.querySelectorAll(".pbi-card").forEach(function (card) {
           card.addEventListener("click", function () { open(card); });
+          card.addEventListener("keydown", function (e) {
+            if (e.key === "Enter" || e.key === " ") {
+              e.preventDefault();
+              open(card);
+            }
+          });
         });
 
         modal.addEventListener("click", function (e) {
