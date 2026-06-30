@@ -654,6 +654,31 @@ body.no-scroll {
   gap: 2.5rem;
 }
 
+/* Project entry (used on dbt-estate and other write-up pages) */
+.project {
+  padding: 1.5rem 0;
+  border-top: 1px solid var(--border);
+}
+
+.project:first-of-type {
+  border-top: 0;
+  padding-top: 0;
+}
+
+.project-head {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  gap: 1rem;
+  flex-wrap: wrap;
+  margin-bottom: 0.5rem;
+}
+
+.project-head h2 {
+  margin: 0;
+  font-size: 1.35rem;
+}
+
 .plain-list {
   list-style: none;
   padding: 0;
