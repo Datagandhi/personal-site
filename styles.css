@@ -100,7 +100,8 @@ body {
 
 h1,
 h2,
-h3 {
+h3,
+h4 {
   letter-spacing: -0.02em;
   line-height: 1.2;
   margin: 0 0 0.75rem;
@@ -118,6 +119,11 @@ h2 {
 
 h3 {
   font-size: 1.15rem;
+}
+
+h4 {
+  font-size: 1rem;
+  margin-top: 1rem;
 }
 
 .accent {
@@ -351,7 +357,7 @@ h3 {
 /* Portfolio — Power BI grid */
 .pbi-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
   gap: 1.25rem;
 }
 
@@ -377,6 +383,10 @@ h3 {
   border-color: var(--accent);
   box-shadow: 0 2px 4px rgba(20, 20, 20, 0.06), 0 10px 24px rgba(20, 20, 20, 0.08);
   outline: none;
+}
+
+.pbi-card--link {
+  text-decoration: none;
 }
 
 .pbi-card .thumb {
@@ -432,6 +442,12 @@ h3 {
 .pbi-desc {
   color: var(--text-soft);
   font-size: 0.95rem;
+}
+
+.pill-row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.4rem;
 }
 
 .pill--accent {
@@ -572,6 +588,22 @@ body.no-scroll {
 .btn-ghost:hover {
   border-color: var(--accent);
   color: var(--accent);
+}
+
+.icon-link {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  vertical-align: middle;
+  margin-left: 0.35rem;
+  color: var(--text-soft);
+  transition: color 0.15s ease, transform 0.15s ease;
+}
+
+.icon-link:hover,
+.icon-link:focus-visible {
+  color: var(--accent);
+  transform: translateY(-1px);
 }
 
 .role {

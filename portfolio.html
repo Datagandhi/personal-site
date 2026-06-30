@@ -24,13 +24,14 @@
       <section class="section">
         <div class="container">
           <p class="lede">
-            A selection of my work in pipeline, semantic layer, AI Context and Dashboarding.
-
-            Would you be rather interested in seeing my thoughts on data and life?
-            <a class="btn-ghost" href="blog.html">Blogs &amp; Journals &rarr;</a>
+            A selection of solutions I enjoyed creating that showcases my skills in building pipelines, semantic layer, AI context, dashboarding and understanding different problems.
           </p>
           <p class="lede">
-            Disclaimer: To avoid AI slop most descriptions and details here will be precise and bare minimal.
+            Would you be interested in reading my thoughts on data and life?
+            <a class="icon-link" href="blog.html" title="Blogs &amp; Journals">read</a>
+          </p>
+          <p class="lede">
+            Disclaimer: To avoid AI slop, most descriptions and details here will be precise and bare minimal.
           </p>
         </div>
       </section>
@@ -163,19 +164,32 @@
 
       <section class="section">
         <div class="container">
-          <h2>More work</h2>
-          <p class="section-sub">Longer-form write-ups and the dbt side of the estate.</p>
-          <div class="card-grid">
-            <a class="work-card work-card--link" href="dbt-estate.html">
-              <h3>dbt Estate <span class="arrow" aria-hidden="true">&rarr;</span></h3>
-              <p>An overview of dbt projects — modelling patterns, lineage, testing strategy, and docs.</p>
-              <span class="pill">Coming soon</span>
-            </a>
+          <h2>Data Projects</h2>
+          <p class="section-sub">
+          </p>
 
-            <a class="work-card work-card--link" href="case-studies.html">
-              <h3>Case Studies <span class="arrow" aria-hidden="true">&rarr;</span></h3>
-              <p>Write-ups of specific problems: the brief, the approach, the outcome, what I'd do differently.</p>
-              <span class="pill">Coming soon</span>
+          <div class="pbi-grid">
+            <a
+              class="pbi-card pbi-card--link"
+              href="house-hunt-system.html"
+              aria-label="Open the House Hunt System project page"
+            >
+              <span class="thumb">
+                <img
+                  class="thumb-image"
+                  src="assets/house-hunting-system.png"
+                  alt="Preview of the House Hunt System project"
+                  loading="lazy"
+                />
+              </span>
+              <span class="pbi-body">
+                <span class="pbi-title">House Hunt System<span class="arrow" aria-hidden="true">&rarr;</span></span>
+                <span class="pbi-desc">A system that scores, ranks, and tracks historic price movements of property listings for buying in NL to help users to ease their house hunt without additional subscription costs for platforms and advanced features like AI assisted search and alerting.</span>
+                <span class="pill-row">
+                  <span class="pill pill--accent">dbt</span>
+                  <span class="pill pill--accent">BigQuery</span>
+                </span>
+              </span>
             </a>
           </div>
         </div>
@@ -252,7 +266,7 @@
           }
         }
 
-        document.querySelectorAll(".pbi-card").forEach(function (card) {
+        document.querySelectorAll(".pbi-card[data-embed-url]").forEach(function (card) {
           card.addEventListener("click", function () { open(card); });
           card.addEventListener("keydown", function (e) {
             if (e.key === "Enter" || e.key === " ") {
