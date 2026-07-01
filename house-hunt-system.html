@@ -1,0 +1,78 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>House Hunt System — Naveen Raj Mohan</title>
+    <meta
+      name="description"
+      content="An end-to-end dbt and BigQuery pipeline that scores and ranks property listings to streamline house hunting."
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header class="site-header">
+      <div class="container header-inner">
+        <a href="portfolio.html" class="brand">Naveen Raj Mohan</a>
+        <nav class="nav" aria-label="Primary">
+          <a href="portfolio.html">Portfolio</a>
+        </nav>
+      </div>
+    </header>
+
+    <main>
+      <section class="section">
+        <div class="container">
+          <a class="back-link" href="portfolio.html">&larr; Back to portfolio</a>
+          <h1 class="display">House Hunt System</h1>
+          <p class="lede">
+            In my pursuit of buying a house in NL I struggled with a few problems and decided to build a system that helps me, my friends and anyone who would be in the same boat to ease up their house hunting journey.
+          </p>
+          <p>
+            <a
+              class="btn-ghost"
+              href="https://github.com/Datagandhi/house-hunting-system"
+              rel="noopener"
+              target="_blank"
+            >View on GitHub &rarr;</a>
+          </p>
+        </div>
+      </section>
+
+      <section class="section section--muted">
+        <div class="container">
+          <article class="project">
+            <h3>Problem statement</h3>
+            <ul class="muted">
+              <li>Keeping track of the houses an user is interested gets tiring over time.</li>
+              <li>historical price tracking and drops is behind a pay wall.</li>
+              <li>As a data nerd, I found the whole search experience boring and wanted to reimagine it using some custom search preferences.</li>
+            </ul>
+
+            <h3>Approach</h3>
+
+            <h4>Ingestion</h4>
+            <p class="muted">Data from platform vendors is collected while respecting their terms of service on data scraping, and is ingested as parquet onto a lakehouse.</p>
+
+            <h4>Modeling</h4>
+            <p class="muted">To start with, this pulls data from one source (Funda listings) and there is always a risk of them retracting the current scraping method this project uses. So to keep it platform-agnostic and make adding and removing data sources scalable without disrupting the project, data vault methodology is used for integration, on top of which a dimensional model is built out. That model then acts as the foundation for a semantic layer powering both the final human-facing user interface and AI-assisted search.</p>
+
+            <h3>Status</h3>
+            <p class="muted">Currently the scraping and integration of data into a vault is worked out, which can be found in the GitHub repo. This project is being actively built out and be ready for usage by 15th of July.</p>
+
+          </article>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container">
+        <small>&copy; <span id="year"></span> Naveen Raj Mohan. Built with plain HTML &amp; CSS.</small>
+      </div>
+    </footer>
+
+    <script>
+      document.getElementById("year").textContent = new Date().getFullYear();
+    </script>
+  </body>
+</html>
